@@ -23,6 +23,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
           BRANCH: gh-pages # Nome da branch onde o site será implantado
           FOLDER: public # Pasta onde o site foi construído
