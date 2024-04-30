@@ -1,5 +1,6 @@
-import CreatePassword from './create_password'
+import CreatePassword from './create_password.js'
 
+console.log('Cheguei aqui')
 document.addEventListener('click', e => {
    const elem = e.target.classList.value
    if(elem === 'botao_GS') {
