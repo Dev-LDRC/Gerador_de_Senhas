@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -19,9 +19,6 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
-      - name: Install rsync
-        run: sudo apt-get install rsync
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
